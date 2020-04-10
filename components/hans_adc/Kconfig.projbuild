@@ -1,0 +1,204 @@
+menu "ADC1 Configuration"
+    config BSP_ADC1_CHANNEL_0
+        int "ADC1 Channel 0 (GPIO 36/SP)"
+        default -1
+        help
+        please into channel number 0 to enable adc channel
+
+    menu "ADC1 Channel 0 config"
+        config BSP_ADC1_ATTEN_T_0
+            int "ADC1 Channel 0 setting attenuation（测量满程电压）"
+            default 3
+            help
+            ADC_ATTEN_DB_0   = 0 0dB    attenuation (ADC_ATTEN_0db)   gives full-scale voltage 1.1V
+            ADC_ATTEN_DB_2_5 = 1 2.5dB  attenuation (ADC_ATTEN_2_5db) gives full-scale voltage 1.5V
+            ADC_ATTEN_DB_6   = 2 6dB    attenuation (ADC_ATTEN_6db)   gives full-scale voltage 2.2V
+            ADC_ATTEN_DB_11  = 3 11dB   attenuation (ADC_ATTEN_11db)  gives full-scale voltage 3.9V (see note below)
+            ADC_ATTEN_MAX
+        config BSP_ADC1_BIT_WIDTH_T_0
+            int "ADC1 Channel 0 Configure ADC capture width.(捕获宽度)"
+            default 3
+            help
+                ADC_WIDTH_BIT_9  = 0 ADC capture width is 9Bit
+                ADC_WIDTH_BIT_10 = 1 ADC capture width is 10Bit
+                ADC_WIDTH_BIT_11 = 2 ADC capture width is 11Bit
+                ADC_WIDTH_BIT_12 = 3 ADC capture width is 12Bit
+                ADC_WIDTH_MAX
+    endmenu
+
+    config BSP_ADC1_CHANNEL_1
+        int "ADC1 Channel 1 (GPIO 37/NC)"
+        default -1
+        help
+        please into channel number 1 to enable adc channel
+    menu "ADC1 Channel 1 config"
+        config BSP_ADC1_ATTEN_T_1
+            int "ADC1 Channel 1 setting attenuation（测量满程电压）"
+            default 3
+            help
+            ADC_ATTEN_DB_0   = 0 0dB    attenuation (ADC_ATTEN_0db)   gives full-scale voltage 1.1V
+            ADC_ATTEN_DB_2_5 = 1 2.5dB  attenuation (ADC_ATTEN_2_5db) gives full-scale voltage 1.5V
+            ADC_ATTEN_DB_6   = 2 6dB    attenuation (ADC_ATTEN_6db)   gives full-scale voltage 2.2V
+            ADC_ATTEN_DB_11  = 3 11dB   attenuation (ADC_ATTEN_11db)  gives full-scale voltage 3.9V (see note below)
+            ADC_ATTEN_MAX
+        config BSP_ADC1_BIT_WIDTH_T_1
+            int "ADC1 Channel 1 Configure ADC capture width.(捕获宽度)"
+            default 3
+            help
+                ADC_WIDTH_BIT_9  = 0 ADC capture width is 9Bit
+                ADC_WIDTH_BIT_10 = 1 ADC capture width is 10Bit
+                ADC_WIDTH_BIT_11 = 2 ADC capture width is 11Bit
+                ADC_WIDTH_BIT_12 = 3 ADC capture width is 12Bit
+                ADC_WIDTH_MAX
+    endmenu
+    config BSP_ADC1_CHANNEL_2
+        int "ADC1 Channel 2 (GPIO 38/NC)"
+        default -1
+        help
+        please into channel number 2 to enable adc channel
+    menu "ADC1 Channel 2 config"
+        config BSP_ADC1_ATTEN_T_2
+            int "ADC1 Channel 2 setting attenuation（测量满程电压）"
+            default 3
+            help
+            ADC_ATTEN_DB_0   = 0 0dB    attenuation (ADC_ATTEN_0db)   gives full-scale voltage 1.1V
+            ADC_ATTEN_DB_2_5 = 1 2.5dB  attenuation (ADC_ATTEN_2_5db) gives full-scale voltage 1.5V
+            ADC_ATTEN_DB_6   = 2 6dB    attenuation (ADC_ATTEN_6db)   gives full-scale voltage 2.2V
+            ADC_ATTEN_DB_11  = 3 11dB   attenuation (ADC_ATTEN_11db)  gives full-scale voltage 3.9V (see note below)
+            ADC_ATTEN_MAX
+        config BSP_ADC1_BIT_WIDTH_T_2
+            int "ADC1 Channel 2 Configure ADC capture width.(捕获宽度)"
+            default 3
+            help
+                ADC_WIDTH_BIT_9  = 0 ADC capture width is 9Bit
+                ADC_WIDTH_BIT_10 = 1 ADC capture width is 10Bit
+                ADC_WIDTH_BIT_11 = 2 ADC capture width is 11Bit
+                ADC_WIDTH_BIT_12 = 3 ADC capture width is 12Bit
+                ADC_WIDTH_MAX
+    endmenu
+    config BSP_ADC1_CHANNEL_3
+        int "ADC1 Channel 3 (GPIO 39/SN)"
+        default -1
+        help
+        please into channel number 3 to enable adc channel
+    menu "ADC1 Channel 3 config"
+        config BSP_ADC1_ATTEN_T_3
+            int "ADC1 Channel 3 setting attenuation（测量满程电压）"
+            default 3
+            help
+            ADC_ATTEN_DB_0   = 0 0dB    attenuation (ADC_ATTEN_0db)   gives full-scale voltage 1.1V
+            ADC_ATTEN_DB_2_5 = 1 2.5dB  attenuation (ADC_ATTEN_2_5db) gives full-scale voltage 1.5V
+            ADC_ATTEN_DB_6   = 2 6dB    attenuation (ADC_ATTEN_6db)   gives full-scale voltage 2.2V
+            ADC_ATTEN_DB_11  = 3 11dB   attenuation (ADC_ATTEN_11db)  gives full-scale voltage 3.9V (see note below)
+            ADC_ATTEN_MAX
+        config BSP_ADC1_BIT_WIDTH_T_3
+            int "ADC1 Channel 3 Configure ADC capture width.(捕获宽度)"
+            default 3
+            help
+                ADC_WIDTH_BIT_9  = 0 ADC capture width is 9Bit
+                ADC_WIDTH_BIT_10 = 1 ADC capture width is 10Bit
+                ADC_WIDTH_BIT_11 = 2 ADC capture width is 11Bit
+                ADC_WIDTH_BIT_12 = 3 ADC capture width is 12Bit
+                ADC_WIDTH_MAX
+    endmenu
+    config BSP_ADC1_CHANNEL_4
+        int "ADC1 Channel 4 (GPIO 32)"
+        default -1
+        help
+        please into channel number 4 to enable adc channel
+    menu "ADC1 Channel 4 config"
+        config BSP_ADC1_ATTEN_T_4
+            int "ADC1 Channel 4 setting attenuation（测量满程电压）"
+            default 3
+            help
+            ADC_ATTEN_DB_0   = 0 0dB    attenuation (ADC_ATTEN_0db)   gives full-scale voltage 1.1V
+            ADC_ATTEN_DB_2_5 = 1 2.5dB  attenuation (ADC_ATTEN_2_5db) gives full-scale voltage 1.5V
+            ADC_ATTEN_DB_6   = 2 6dB    attenuation (ADC_ATTEN_6db)   gives full-scale voltage 2.2V
+            ADC_ATTEN_DB_11  = 3 11dB   attenuation (ADC_ATTEN_11db)  gives full-scale voltage 3.9V (see note below)
+            ADC_ATTEN_MAX
+        config BSP_ADC1_BIT_WIDTH_T_4
+            int "ADC1 Channel 4 Configure ADC capture width.(捕获宽度)"
+            default 3
+            help
+                ADC_WIDTH_BIT_9  = 0 ADC capture width is 9Bit
+                ADC_WIDTH_BIT_10 = 1 ADC capture width is 10Bit
+                ADC_WIDTH_BIT_11 = 2 ADC capture width is 11Bit
+                ADC_WIDTH_BIT_12 = 3 ADC capture width is 12Bit
+                ADC_WIDTH_MAX
+    endmenu
+    config BSP_ADC1_CHANNEL_5
+        int "ADC1 Channel 5 (GPIO 33)"
+        default -1
+        help
+        please into channel number 5 to enable adc channel
+    menu "ADC1 Channel 5 config"
+        config BSP_ADC1_ATTEN_T_5
+            int "ADC1 Channel 5 setting attenuation（测量满程电压）"
+            default 3
+            help
+            ADC_ATTEN_DB_0   = 0 0dB    attenuation (ADC_ATTEN_0db)   gives full-scale voltage 1.1V
+            ADC_ATTEN_DB_2_5 = 1 2.5dB  attenuation (ADC_ATTEN_2_5db) gives full-scale voltage 1.5V
+            ADC_ATTEN_DB_6   = 2 6dB    attenuation (ADC_ATTEN_6db)   gives full-scale voltage 2.2V
+            ADC_ATTEN_DB_11  = 3 11dB   attenuation (ADC_ATTEN_11db)  gives full-scale voltage 3.9V (see note below)
+            ADC_ATTEN_MAX
+        config BSP_ADC1_BIT_WIDTH_T_5
+            int "ADC1 Channel 5 Configure ADC capture width.(捕获宽度)"
+            default 3
+            help
+                ADC_WIDTH_BIT_9  = 0 ADC capture width is 9Bit
+                ADC_WIDTH_BIT_10 = 1 ADC capture width is 10Bit
+                ADC_WIDTH_BIT_11 = 2 ADC capture width is 11Bit
+                ADC_WIDTH_BIT_12 = 3 ADC capture width is 12Bit
+                ADC_WIDTH_MAX
+    endmenu
+    config BSP_ADC1_CHANNEL_6
+        int "ADC1 Channel 6 (GPIO 34)"
+        default -1
+        help
+        please into channel number 6 to enable adc channel
+    menu "ADC1 Channel 6 config"
+        config BSP_ADC1_ATTEN_T_6
+            int "ADC1 Channel 6 setting attenuation（测量满程电压）"
+            default 3
+            help
+            ADC_ATTEN_DB_0   = 0 0dB    attenuation (ADC_ATTEN_0db)   gives full-scale voltage 1.1V
+            ADC_ATTEN_DB_2_5 = 1 2.5dB  attenuation (ADC_ATTEN_2_5db) gives full-scale voltage 1.5V
+            ADC_ATTEN_DB_6   = 2 6dB    attenuation (ADC_ATTEN_6db)   gives full-scale voltage 2.2V
+            ADC_ATTEN_DB_11  = 3 11dB   attenuation (ADC_ATTEN_11db)  gives full-scale voltage 3.9V (see note below)
+            ADC_ATTEN_MAX
+        config BSP_ADC1_BIT_WIDTH_T_6
+            int "ADC1 Channel 6 Configure ADC capture width.(捕获宽度)"
+            default 3
+            help
+                ADC_WIDTH_BIT_9  = 0 ADC capture width is 9Bit
+                ADC_WIDTH_BIT_10 = 1 ADC capture width is 10Bit
+                ADC_WIDTH_BIT_11 = 2 ADC capture width is 11Bit
+                ADC_WIDTH_BIT_12 = 3 ADC capture width is 12Bit
+                ADC_WIDTH_MAX
+    endmenu
+    config BSP_ADC1_CHANNEL_7
+        int "ADC1 Channel 7 (GPIO 35)"
+        default -1
+        help
+        please into channel number 7 to enable adc channel
+    menu "ADC1 Channel 7 config"
+        config BSP_ADC1_ATTEN_T_7
+            int "ADC1 Channel 7 setting attenuation（测量满程电压）"
+            default 3
+            help
+            ADC_ATTEN_DB_0   = 0 0dB    attenuation (ADC_ATTEN_0db)   gives full-scale voltage 1.1V
+            ADC_ATTEN_DB_2_5 = 1 2.5dB  attenuation (ADC_ATTEN_2_5db) gives full-scale voltage 1.5V
+            ADC_ATTEN_DB_6   = 2 6dB    attenuation (ADC_ATTEN_6db)   gives full-scale voltage 2.2V
+            ADC_ATTEN_DB_11  = 3 11dB   attenuation (ADC_ATTEN_11db)  gives full-scale voltage 3.9V (see note below)
+            ADC_ATTEN_MAX
+        config BSP_ADC1_BIT_WIDTH_T_7
+            int "ADC1 Channel 7 Configure ADC capture width.(捕获宽度)"
+            default 3
+            help
+                ADC_WIDTH_BIT_9  = 0 ADC capture width is 9Bit
+                ADC_WIDTH_BIT_10 = 1 ADC capture width is 10Bit
+                ADC_WIDTH_BIT_11 = 2 ADC capture width is 11Bit
+                ADC_WIDTH_BIT_12 = 3 ADC capture width is 12Bit
+                ADC_WIDTH_MAX
+    endmenu
+endmenu
